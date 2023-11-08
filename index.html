@@ -1,0 +1,42 @@
+<style>
+
+
+  nav{
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+/* 1 fr=whole page, .5fr= half page, but fr can be stacked w eachother, so they can all have the 1 fr and they take up as much space as they can*/
+    
+    
+   /*   flex-direction: row;
+    (other options: column, column-reverse, row etc)
+    justify-content: space-around; */
+    background-color: lightgreen;
+/*     align-items: center; */
+    margin: 6px ;
+    padding: 10px;
+/*adds margin around each a tag (so all the words)*/
+/*  media query: if x happens do y, but only if x happens--good for diff screen sizes */
+  }
+
+  a{
+    
+  }
+
+  @media (max-width: 415px) {
+    nav{
+      flex-direction: column;
+/* can also be under min-width; and the reverse happens 
+      you can also have multiple media quesries (w diff widths-615px 2 columns, 415 1 column)*/
+        }
+  }
+
+</style>
+
+
+
+<nav> 
+<!-- what menus are put in: nav   -->
+<a href="#"> shop</a>
+<a href="#"> about</a>
+<a href="#"> contact</a>
+</nav>
